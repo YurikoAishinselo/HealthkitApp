@@ -11,7 +11,7 @@ import SwiftUI
 struct HealthkitProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            HeartView()
+            HealthAppView()
         }
     }
 }

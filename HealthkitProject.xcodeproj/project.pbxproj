@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E904556E2C43D30600B49201 /* HealthAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E904556D2C43D30600B49201 /* HealthAppView.swift */; };
+		E90455702C43D60A00B49201 /* HealthCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E904556F2C43D60A00B49201 /* HealthCategoryView.swift */; };
 		E9DD76D62C2B064800BE5B63 /* HealthkitProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD76D52C2B064800BE5B63 /* HealthkitProjectApp.swift */; };
 		E9DD76D82C2B064800BE5B63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD76D72C2B064800BE5B63 /* ContentView.swift */; };
 		E9DD76DA2C2B064900BE5B63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9DD76D92C2B064900BE5B63 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E904556D2C43D30600B49201 /* HealthAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthAppView.swift; sourceTree = "<group>"; };
+		E904556F2C43D60A00B49201 /* HealthCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCategoryView.swift; sourceTree = "<group>"; };
 		E9DD76D22C2B064800BE5B63 /* HealthkitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthkitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9DD76D52C2B064800BE5B63 /* HealthkitProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthkitProjectApp.swift; sourceTree = "<group>"; };
 		E9DD76D72C2B064800BE5B63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				E9DD76E52C2B0BD400BE5B63 /* HeartRateViewModel.swift */,
 				E9DD76E72C2B0BE500BE5B63 /* HeartView.swift */,
 				E9DD76EA2C2BC26E00BE5B63 /* OxygenSaturationViewModel.swift */,
+				E904556D2C43D30600B49201 /* HealthAppView.swift */,
+				E904556F2C43D60A00B49201 /* HealthCategoryView.swift */,
 			);
 			path = HealthkitProject;
 			sourceTree = "<group>";
@@ -151,7 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E904556E2C43D30600B49201 /* HealthAppView.swift in Sources */,
 				E9DD76E82C2B0BE500BE5B63 /* HeartView.swift in Sources */,
+				E90455702C43D60A00B49201 /* HealthCategoryView.swift in Sources */,
 				E9DD76E42C2B069D00BE5B63 /* HealthkitManager.swift in Sources */,
 				E9DD76D82C2B064800BE5B63 /* ContentView.swift in Sources */,
 				E9DD76D62C2B064800BE5B63 /* HealthkitProjectApp.swift in Sources */,

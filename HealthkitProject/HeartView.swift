@@ -20,6 +20,7 @@ struct HeartView: View {
         .refreshable {
             viewModel.fetchAllHeartRateData()
         }
+        .navigationTitle("Heart")
     }
     
     private var latestHeartRateView: some View {
