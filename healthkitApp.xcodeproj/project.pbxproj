@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E987DD992BD94960007E53D0 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987DD982BD94960007E53D0 /* HealthManager.swift */; };
 		E9FA63732BD8B48900497991 /* healthkitAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA63722BD8B48900497991 /* healthkitAppApp.swift */; };
 		E9FA63752BD8B48900497991 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA63742BD8B48900497991 /* ContentView.swift */; };
 		E9FA63772BD8B48A00497991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9FA63762BD8B48A00497991 /* Assets.xcassets */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E987DD982BD94960007E53D0 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		E987DD9A2BD94AE0007E53D0 /* healthkitApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = healthkitApp.entitlements; sourceTree = "<group>"; };
 		E9FA636F2BD8B48900497991 /* healthkitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = healthkitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FA63722BD8B48900497991 /* healthkitAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthkitAppApp.swift; sourceTree = "<group>"; };
 		E9FA63742BD8B48900497991 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,10 +97,12 @@
 		E9FA63712BD8B48900497991 /* healthkitApp */ = {
 			isa = PBXGroup;
 			children = (
+				E987DD9A2BD94AE0007E53D0 /* healthkitApp.entitlements */,
 				E9FA63722BD8B48900497991 /* healthkitAppApp.swift */,
 				E9FA63742BD8B48900497991 /* ContentView.swift */,
 				E9FA63762BD8B48A00497991 /* Assets.xcassets */,
 				E9FA63782BD8B48A00497991 /* Preview Content */,
+				E987DD982BD94960007E53D0 /* HealthManager.swift */,
 			);
 			path = healthkitApp;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9FA63752BD8B48900497991 /* ContentView.swift in Sources */,
+				E987DD992BD94960007E53D0 /* HealthManager.swift in Sources */,
 				E9FA63732BD8B48900497991 /* healthkitAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,12 +425,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = healthkitApp/healthkitApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"healthkitApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 74HCH446S4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -448,12 +456,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = healthkitApp/healthkitApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"healthkitApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 74HCH446S4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
