@@ -11,6 +11,10 @@
 		E9DD76D82C2B064800BE5B63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD76D72C2B064800BE5B63 /* ContentView.swift */; };
 		E9DD76DA2C2B064900BE5B63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9DD76D92C2B064900BE5B63 /* Assets.xcassets */; };
 		E9DD76DD2C2B064900BE5B63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9DD76DC2C2B064900BE5B63 /* Preview Assets.xcassets */; };
+		E9DD76E42C2B069D00BE5B63 /* HealthkitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD76E32C2B069D00BE5B63 /* HealthkitManager.swift */; };
+		E9DD76E62C2B0BD400BE5B63 /* HeartRateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD76E52C2B0BD400BE5B63 /* HeartRateViewModel.swift */; };
+		E9DD76E82C2B0BE500BE5B63 /* HeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD76E72C2B0BE500BE5B63 /* HeartView.swift */; };
+		E9DD76EB2C2BC26E00BE5B63 /* OxygenSaturationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD76EA2C2BC26E00BE5B63 /* OxygenSaturationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		E9DD76D72C2B064800BE5B63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E9DD76D92C2B064900BE5B63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9DD76DC2C2B064900BE5B63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9DD76E32C2B069D00BE5B63 /* HealthkitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthkitManager.swift; sourceTree = "<group>"; };
+		E9DD76E52C2B0BD400BE5B63 /* HeartRateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateViewModel.swift; sourceTree = "<group>"; };
+		E9DD76E72C2B0BE500BE5B63 /* HeartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartView.swift; sourceTree = "<group>"; };
+		E9DD76E92C2B1FA400BE5B63 /* HealthkitProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthkitProject.entitlements; sourceTree = "<group>"; };
+		E9DD76EA2C2BC26E00BE5B63 /* OxygenSaturationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxygenSaturationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +60,15 @@
 		E9DD76D42C2B064800BE5B63 /* HealthkitProject */ = {
 			isa = PBXGroup;
 			children = (
+				E9DD76E92C2B1FA400BE5B63 /* HealthkitProject.entitlements */,
 				E9DD76D52C2B064800BE5B63 /* HealthkitProjectApp.swift */,
 				E9DD76D72C2B064800BE5B63 /* ContentView.swift */,
 				E9DD76D92C2B064900BE5B63 /* Assets.xcassets */,
 				E9DD76DB2C2B064900BE5B63 /* Preview Content */,
+				E9DD76E32C2B069D00BE5B63 /* HealthkitManager.swift */,
+				E9DD76E52C2B0BD400BE5B63 /* HeartRateViewModel.swift */,
+				E9DD76E72C2B0BE500BE5B63 /* HeartView.swift */,
+				E9DD76EA2C2BC26E00BE5B63 /* OxygenSaturationViewModel.swift */,
 			);
 			path = HealthkitProject;
 			sourceTree = "<group>";
@@ -137,8 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9DD76E82C2B0BE500BE5B63 /* HeartView.swift in Sources */,
+				E9DD76E42C2B069D00BE5B63 /* HealthkitManager.swift in Sources */,
 				E9DD76D82C2B064800BE5B63 /* ContentView.swift in Sources */,
 				E9DD76D62C2B064800BE5B63 /* HealthkitProjectApp.swift in Sources */,
+				E9DD76EB2C2BC26E00BE5B63 /* OxygenSaturationViewModel.swift in Sources */,
+				E9DD76E62C2B0BD400BE5B63 /* HeartRateViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,12 +287,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthkitProject/HealthkitProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HealthkitProject/Preview Content\"";
 				DEVELOPMENT_TEAM = 74HCH446S4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "\"Please share your data\"";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need to update your health data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,12 +319,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthkitProject/HealthkitProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HealthkitProject/Preview Content\"";
 				DEVELOPMENT_TEAM = 74HCH446S4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "\"Please share your data\"";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need to update your health data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
